@@ -1,0 +1,27 @@
+Package: icesFO
+Version: 1.0-0
+Date: 2019-02-05
+Title: Functions to support the creation of ICES Fisheries Overviews
+Authors@R: c(person("Adriana", "Villamor", role=c("aut","cre"), email="adriana.villamor@ices.dk"),
+             person("Scott", "Large", role="aut"))
+Imports: jsonlite
+Description: Functions to support the creation of ICES Fisheries Overviews, ....
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: icesFO
+RemoteUsername: ices-tools-prod
+RemoteRef: f30593a
+RemoteSha: f30593a759d6707f3fa9daa196e3b7c2e7ef5f8a
+GithubRepo: icesFO
+GithubUsername: ices-tools-prod
+GithubRef: f30593a
+GithubSHA1: f30593a759d6707f3fa9daa196e3b7c2e7ef5f8a
+NeedsCompilation: no
+Packaged: 2019-07-01 07:59:50 UTC; adriana.villamor
+Author: Adriana Villamor [aut, cre],
+  Scott Large [aut]
+Maintainer: Adriana Villamor <adriana.villamor@ices.dk>
+Built: R 3.5.3; ; 2019-07-01 07:59:52 UTC; windows
