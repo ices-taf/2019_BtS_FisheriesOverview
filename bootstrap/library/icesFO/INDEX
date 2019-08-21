@@ -1,4 +1,6 @@
 CLD_trends              Catch, discards, and landings by stock
+format_annex_table      Format the SAG status data for its use as an
+                        annex table.
 format_catches          Format the data from the time-series of ICES
                         historical, official and preliminary catches.
 format_sag              Format the data from the ICES Stock Assessment
@@ -8,8 +10,6 @@ format_sag_status       Format the stock status data as is in the ICES
 format_sid              Format the data from the ICES Stock Information
                         Database.
 format_stecf_effort     Format the data from STECF effort and landings
-icesFO-package          Functions to support the creation of ICES
-                        Fisheries Overviews
 load_historical_catches
                         Download catch data from ICES web services.
 load_sag_summary        Download data from the ICES Stock Assessment
@@ -20,9 +20,6 @@ plot_CLD_bar            Returns an ordered plot of catch bars colored
                         according to F/F<sub>MSY</sub> and SSB/MSY
                         B<sub>trigger</sub> by fish category and
                         ecoregion
-plot_CLD_kobe           Returns a scatter plot of F/F<sub>MSY</sub> and
-                        SSB/MSY B<sub>trigger</sub> by fish category
-                        and ecoregion
 plot_GES_pies           Returns an ordered plot of catch bars colored
                         according to F/F<sub>MSY</sub> and SSB/MSY
                         B<sub>trigger</sub> by fish category and
