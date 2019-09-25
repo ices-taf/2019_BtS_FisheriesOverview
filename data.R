@@ -1,10 +1,10 @@
 
 # Initial formatting of the data
 
-
-library(dplyr)
-library(operators)
+require(dplyr)
 library(icesFO)
+
+mkdir("data")
 
 # 1: ICES official cath statistics
 
@@ -12,16 +12,31 @@ hist <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_historical_catches.cs
 official <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_2006_2017_catches.csv")
 prelim <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_preliminary_catches.csv")
 
-catch_dat <- format_catches(2018, "Baltic Sea Ecoregion", hist, official, prelim)
+catch_dat <- icesFO::format_catches(2019, "Baltic Sea Ecoregion", hist, official, prelim)
 
 # 2: STECF effort and landings
 
 effort <- read.csv("bootstrap/data/STECF_effort.csv")
 landings <- read.csv("bootstrap/data/STECF_landings.csv")
 
-frmt_effort <- format_stecf_effort(effort)
-frmt_landings <- format_stecf_landings(landings)
 
+frmt_effort <- format_stecf_effort(effort)
+#Depending on how thw file is saved, regulated.area and regulated.gear variables
+# show up with a . or with a space
+
+# names(effort)
+# effort <- dplyr::rename(effort,
+#                         'regulated area' = regulated.area,
+#                         'regulated gear' = regulated.gear)
+# 
+# frmt_effort <- format_stecf_effort(effort)
+
+frmt_landings <- format_stecf_landings(landings)
+# landings <- dplyr::rename(landings,
+#                         'regulated area' = regulated.area,
+#                         'regulated gear' = regulated.gear)
+# 
+# frmt_landings <- format_stecf_landings(landings)
 
 # 3: SAG
 sag_sum <- read.csv("bootstrap/data/SAG_data/SAG_summary.csv")

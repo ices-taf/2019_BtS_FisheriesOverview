@@ -3,7 +3,7 @@
 # STECF and catch statistics only need one formatting step already done in data.R
 
 library(icesTAF)
-
+require(dplyr)
 
 mkdir("model")
 
