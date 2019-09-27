@@ -2,46 +2,32 @@
 # Initial formatting of the data
 
 require(dplyr)
-library(icesFO)
+taf.library(icesFO)
 
 mkdir("data")
 
 # 1: ICES official cath statistics
 
-hist <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_historical_catches.csv")
-official <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_2006_2017_catches.csv")
-prelim <- read.csv("bootstrap/data/ICES_nominal_catches/ICES_preliminary_catches.csv")
+hist <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_historical_catches.csv")
+official <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_2006_2017_catches.csv")
+prelim <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_preliminary_catches.csv")
 
 catch_dat <- icesFO::format_catches(2019, "Baltic Sea Ecoregion", hist, official, prelim)
 
 # 2: STECF effort and landings
 
-effort <- read.csv("bootstrap/data/STECF_effort.csv")
-landings <- read.csv("bootstrap/data/STECF_landings.csv")
+effort <- read.taf("bootstrap/data/STECF_effort.csv")
+landings <- read.taf("bootstrap/data/STECF_landings.csv")
 
 
 frmt_effort <- format_stecf_effort(effort)
-#Depending on how thw file is saved, regulated.area and regulated.gear variables
-# show up with a . or with a space
-
-# names(effort)
-# effort <- dplyr::rename(effort,
-#                         'regulated area' = regulated.area,
-#                         'regulated gear' = regulated.gear)
-# 
-# frmt_effort <- format_stecf_effort(effort)
 
 frmt_landings <- format_stecf_landings(landings)
-# landings <- dplyr::rename(landings,
-#                         'regulated area' = regulated.area,
-#                         'regulated gear' = regulated.gear)
-# 
-# frmt_landings <- format_stecf_landings(landings)
 
 # 3: SAG
-sag_sum <- read.csv("bootstrap/data/SAG_data/SAG_summary.csv")
-sag_refpts <- read.csv("bootstrap/data/SAG_data/SAG_refpts.csv")
-sag_status <- read.csv("bootstrap/data/SAG_data/SAG_status.csv")
+sag_sum <- read.taf("bootstrap/data/SAG_data/SAG_summary.csv")
+sag_refpts <- read.taf("bootstrap/data/SAG_data/SAG_refpts.csv")
+sag_status <- read.taf("bootstrap/data/SAG_data/SAG_status.csv")
 
 Baltic_Out_stocks <-  c("sal.27.32", "sal.27.22-31", "ele.2737.nea", "trs.27.22-32", "her.27.30", "her.27.31")
 
