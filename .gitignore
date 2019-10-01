@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+
+2019_BtS_FisheriesOverview.Rproj
+
+/bootstrap/software/
+/bootstrap/library/
+/bootstrap/initial/data-raw/
+
+/data/
+/model/
+/output/
+/report/
