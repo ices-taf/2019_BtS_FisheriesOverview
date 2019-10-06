@@ -2,6 +2,9 @@
 
 
 library(icesTAF)
+taf.library(icesFO)
+library(sf)
+library(ggplot2)
 
 mkdir("report")
 
@@ -19,16 +22,19 @@ catch_trends <- read.taf("model/catch_trends.csv")
 
 clean_status <- read.taf("data/clean_status.csv")
 
-areas <- read.taf("bootstrap/data/ICES_areas/ICES_areas.csv")
-ecoregions <- read.taf("bootstrap/data/ICES_ecoregions/ICES_ecoregions.csv")
+ices_areas <- 
+  sf::st_read("bootstrap/data/ICES_areas/areas.csv", 
+              options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
+ecoregion <- 
+  sf::st_read("bootstrap/data/ICES_ecoregions/ecoregion.csv", 
+              options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
 
 ###############
 ##Ecoregion map
 ###############
 
-plot_ecoregionMap()
-
-
+plot_ecoregion_map(ecoregion, ices_areas)
+ggplot2::ggsave("2019_BtS_FO_Figure1.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
 
 
 #################################################
