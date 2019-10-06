@@ -6,9 +6,11 @@
 
 2019_BtS_FisheriesOverview.Rproj
 
-/bootstrap/software/
 /bootstrap/library/
+/bootstrap/software/
 /bootstrap/initial/data-raw/
+/bootstrap/data/
+
 
 /data/
 /model/

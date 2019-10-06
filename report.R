@@ -281,3 +281,12 @@ dat <- format_annex_table(frmt_status, 2019, return_data = T)
 
 
 
+###########
+## 3: VMS #
+###########
+
+#~~~~~~~~~~~~~~~#
+# A. Effort map
+#~~~~~~~~~~~~~~~#
+
+
