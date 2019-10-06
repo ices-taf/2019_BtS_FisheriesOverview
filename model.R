@@ -3,7 +3,8 @@
 # STECF and catch statistics only need one formatting step already done in data.R
 
 library(icesTAF)
-require(dplyr)
+library(dplyr)
+taf.library(icesFO)
 
 mkdir("model")
 
@@ -11,12 +12,13 @@ mkdir("model")
 
 clean_sag <- read.taf("data/clean_sag.csv")
 trends <- stock_trends(clean_sag)
-write.taf(trends, file = "model/trends.csv")
+
+write.taf(trends, dir = "model")
 
 #B.Trends and current catches, landings and discards
 
-
 catch_trends <- CLD_trends(clean_sag)
 catch_current <- stockstatus_CLD_current(clean_sag)
-write.taf(catch_trends, file = "model/catch_trends.csv")
-write.taf(catch_current, file = "model/catch_current.csv")
+
+write.taf(catch_trends, dir = "model")
+write.taf(catch_current, dir = "model")
