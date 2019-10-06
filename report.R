@@ -24,9 +24,18 @@ clean_status <- read.taf("data/clean_status.csv")
 ices_areas <- 
   sf::st_read("bootstrap/data/ICES_areas/areas.csv", 
               options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
+ices_areas <- dplyr::select(ices_areas, -WKT)
+
 ecoregion <- 
   sf::st_read("bootstrap/data/ICES_ecoregions/ecoregion.csv", 
               options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
+ecoregion <- dplyr::select(ecoregion, -WKT)
+
+# read vms fishing effort
+effort <-
+  sf::st_read("bootstrap/data/ICES_vms_effort_map/vms_effort.csv",
+               options = "GEOM_POSSIBLE_NAMES=wkt", crs = 4326)
+effort <- dplyr::select(effort, -WKT)
 
 ###############
 ##Ecoregion map
@@ -297,4 +306,13 @@ dat <- format_annex_table(clean_status, 2019, return_data = TRUE)
 # A. Effort map
 #~~~~~~~~~~~~~~~#
 
+baltic_gears <- c("Static", "Midwater", "Otter", "Demersal seine")
+plot_effort_map(
+    dplyr::filter(effort, fishing_category_FO %in% baltic_gears),
+    ecoregion)
+ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
+
+#~~~~~~~~~~~~~~~#
+# A. Swept area map
+#~~~~~~~~~~~~~~~#
 
