@@ -291,6 +291,11 @@ write.taf(dat, file= "2019_BtS_FO_Figure11.csv", dir = "report")
 #F. ANNEX TABLE 
 #~~~~~~~~~~~~~~~#
 doc <- format_annex_table(clean_status, 2019, return_data = FALSE)
+#can´t find the path
+grey.path <- system.file("symbols", "grey_q.png", package = "icesFO")
+red.path <- system.file("symbols", "red_cross.png", package = "icesFO")
+green.path <- system.file("symbols", "green_check.png", package = "icesFO")
+
 print(doc, target = "report/2019_BtS_FO_annex_table.docx")
 
 dat <- format_annex_table(clean_status, 2019, return_data = TRUE)
