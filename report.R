@@ -37,6 +37,12 @@ effort <-
                options = "GEOM_POSSIBLE_NAMES=wkt", crs = 4326)
 effort <- dplyr::select(effort, -WKT)
 
+# read vms swept area ratio
+sar <-
+  sf::st_read("bootstrap/data/ICES_vms_sar_map/vms_sar.csv",
+               options = "GEOM_POSSIBLE_NAMES=wkt", crs = 4326)
+sar <- dplyr::select(sar, -WKT)
+
 ###############
 ##Ecoregion map
 ###############
@@ -321,3 +327,8 @@ ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height 
 # A. Swept area map
 #~~~~~~~~~~~~~~~#
 
+plot_sar_map(sar, ecoregion, what = "surface")
+ggplot2::ggsave("2019_BtS_FO_Figure17a.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
+
+plot_sar_map(sar, ecoregion, what = "subsurface")
+ggplot2::ggsave("2019_BtS_FO_Figure17b.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
