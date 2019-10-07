@@ -284,29 +284,28 @@ write.taf(dat, file= "2019_BtS_FO_Figure10.csv", dir = "report")
 #~~~~~~~~~~~~~~~#
 #E. GES pies
 #~~~~~~~~~~~~~~~#
-if (FASE) { # these are failing
 
 #Need to change order and fix numbers
 plot_GES_pies(clean_status, catch_current, "August", "2019")
-ggplot2::ggsave("2019_BtS_FO_Figure11.png", path = "report/", width = 178, height = 178, units = "mm", dpi = 300)
+ggplot2::ggsave("2019_BtS_FO_Figure11.png", path = "report", width = 178, height = 178, units = "mm", dpi = 300)
 
 dat <- plot_GES_pies(clean_status, catch_current, "November", "2018", return_data = TRUE)
-write.taf(dat, file= "2019_BtS_FO_Figure11.csv", dir = "report")
+write.taf(dat, file = "2019_BtS_FO_Figure11.csv", dir = "report")
 
 #~~~~~~~~~~~~~~~#
 #F. ANNEX TABLE 
 #~~~~~~~~~~~~~~~#
-doc <- format_annex_table(clean_status, 2019, return_data = FALSE)
+
 #can´t find the path
 grey.path <- system.file("symbols", "grey_q.png", package = "icesFO")
 red.path <- system.file("symbols", "red_cross.png", package = "icesFO")
 green.path <- system.file("symbols", "green_check.png", package = "icesFO")
+doc <- format_annex_table(clean_status, 2019, return_data = FALSE)
 
 print(doc, target = "report/2019_BtS_FO_annex_table.docx")
 
 dat <- format_annex_table(clean_status, 2019, return_data = TRUE)
-
-}
+# save?
 
 
 ###########
