@@ -58,11 +58,11 @@ ggplot2::ggsave("2019_BtS_FO_Figure1.png", path = "report", width = 170, height 
 #~~~~~~~~~~~~~~~#
 # By common name
 #~~~~~~~~~~~~~~~#
-        #Plot
+#Plot
 plot_catch_trends(catch_dat, type = "COMMON_NAME", line_count = 5, plot_type = "line")
 ggplot2::ggsave("2019_BtS_FO_Figure5.png", path = "report/", width = 170, height = 100.5, units = "mm", dpi = 300)
 
-        #data
+#data
 dat <- plot_catch_trends(catch_dat, type = "COMMON_NAME", line_count = 5, plot_type = "line", return_data = TRUE)
 write.taf(dat, "2019_BtS_FO_Figure5.csv", dir = "report")
 
@@ -70,11 +70,11 @@ write.taf(dat, "2019_BtS_FO_Figure5.csv", dir = "report")
 #~~~~~~~~~~~~~~~#
 # By country
 #~~~~~~~~~~~~~~~#
-        #Plot
+#Plot
 plot_catch_trends(catch_dat, type = "COUNTRY", line_count = 9, plot_type = "area")
 ggplot2::ggsave("2019_BtS_FO_Figure2.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
 
-        #data
+#data
 dat <- plot_catch_trends(catch_dat, type = "COUNTRY", line_count = 9, plot_type = "area", return_data = TRUE)
 write.taf(dat, file= "2019_BtS_FO_Figure2.csv", dir = "report")
 
@@ -316,18 +316,35 @@ dat <- format_annex_table(clean_status, 2019, return_data = TRUE)
 # A. Effort map
 #~~~~~~~~~~~~~~~#
 
-baltic_gears <- c("Static", "Midwater", "Otter", "Demersal seine")
-plot_effort_map(
-    dplyr::filter(effort, fishing_category_FO %in% baltic_gears),
-    ecoregion)
+gears <- c("Static", "Midwater", "Otter", "Demersal seine")
+
+effort <-
+    effort %>%
+      dplyr::filter(fishing_category_FO %in% gears) %>%
+      dplyr::mutate(
+        fishing_category_FO = 
+          dplyr::recode(fishing_category_FO,
+            Static = "Static gears",
+            Midwater = "Pelagic trawls and seines",
+            Otter = "Bottom otter trawls",
+            `Demersal seine` = "Bottom seines")
+        )
+
+plot_effort_map(effort, ecoregion) + 
+  ggtitle("Average MW Fishing hours 2015-2018")
+
 ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
 
 #~~~~~~~~~~~~~~~#
 # A. Swept area map
 #~~~~~~~~~~~~~~~#
 
-plot_sar_map(sar, ecoregion, what = "surface")
+plot_sar_map(sar, ecoregion, what = "surface") + 
+  ggtitle("Average surface swept area ratio 2015-2018")
+
 ggplot2::ggsave("2019_BtS_FO_Figure17a.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
 
-plot_sar_map(sar, ecoregion, what = "subsurface")
+plot_sar_map(sar, ecoregion, what = "subsurface")+ 
+  ggtitle("Average subsurface swept area ratio 2015-2018")
+
 ggplot2::ggsave("2019_BtS_FO_Figure17b.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
