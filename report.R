@@ -236,7 +236,7 @@ bar_dat <- plot_CLD_bar(catch_current, guild = "All", caption = T, cap_year = 20
 write.taf(bar_dat, file ="2019_BtS_FO_Figure13_All.csv", dir = "report" )
 
 kobe <- plot_kobe(catch_current, guild = "All", caption = T, cap_year = 2018, cap_month = "August", return_data = FALSE)
-png("report/019_BtS_FO_Figure13_All.png",
+png("report/2019_BtS_FO_Figure13_All.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
@@ -261,7 +261,7 @@ discardsB <- plot_discard_current(catch_trends, 2019, cap_year = 2019, cap_month
 dat <- discardsB <- plot_discard_current(catch_trends, 2019, cap_year = 2018, cap_month = "August", return_data = TRUE)
 write.taf(dat, file ="2019_BtS_FO_Figure7_current.csv", dir = "report" )
 
-png("report/019_BtS_FO_Figure7.png",
+png("report/2019_BtS_FO_Figure7.png",
     width = 131.32,
     height = 88.9,
     units = "mm",
