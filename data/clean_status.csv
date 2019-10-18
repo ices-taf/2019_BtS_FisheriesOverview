@@ -1,0 +1,35 @@
+StockKeyLabel,AssessmentYear,AdviceCategory,lineDescription,FishingPressure,StockSize,SBL,Ecoregion,FisheriesGuild
+bll.27.22-32,2017,PA/Stock status only,Maximum sustainable yield,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic
+bll.27.22-32,2017,PA/Stock status only,Precautionary approach,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic
+cod.27.22-24,2019,MP,Maximum sustainable yield,RED,RED,RED,Baltic Sea Ecoregion,demersal
+cod.27.22-24,2019,MP,Precautionary approach,GREEN,ORANGE,RED,Baltic Sea Ecoregion,demersal
+cod.27.24-32,2019,PA,Maximum sustainable yield,GREY,GREY,RED,Baltic Sea Ecoregion,demersal
+cod.27.24-32,2019,PA,Precautionary approach,GREY,RED,RED,Baltic Sea Ecoregion,demersal
+dab.27.22-32,2017,PA/Stock status only,Maximum sustainable yield,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+dab.27.22-32,2017,PA/Stock status only,Precautionary approach,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2223,2019,PA/Stock status only,Maximum sustainable yield,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2223,2019,PA/Stock status only,Precautionary approach,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2425,2019,PA/Stock status only,Maximum sustainable yield,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2425,2019,PA/Stock status only,Precautionary approach,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2628,2017,PA/Stock status only,Maximum sustainable yield,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2628,2017,PA/Stock status only,Precautionary approach,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2729-32,2017,PA/Stock status only,Maximum sustainable yield,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+fle.27.2729-32,2017,PA/Stock status only,Precautionary approach,GREEN,GREY,GREY,Baltic Sea Ecoregion,benthic
+her.27.20-24,2018,MSY,Maximum sustainable yield,RED,RED,RED,Baltic Sea Ecoregion, Greater North Sea Ecoregion,pelagic
+her.27.20-24,2018,MSY,Precautionary approach,GREEN,RED,RED,Baltic Sea Ecoregion, Greater North Sea Ecoregion,pelagic
+her.27.25-2932,2019,MP,Maximum sustainable yield,RED,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+her.27.25-2932,2019,MP,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+her.27.28,2019,MP,Maximum sustainable yield,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+her.27.28,2019,MP,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+her.27.3031,2019,PA,Maximum sustainable yield,GREY,GREY,GREY,Baltic Sea Ecoregion,pelagic
+her.27.3031,2019,PA,Precautionary approach,GREY,GREY,GREY,Baltic Sea Ecoregion,pelagic
+ple.27.21-23,2019,PA,Maximum sustainable yield,RED,GREEN,GREEN,Baltic Sea Ecoregion, Greater North Sea Ecoregion,benthic
+ple.27.21-23,2019,PA,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion, Greater North Sea Ecoregion,benthic
+ple.27.24-32,2019,PA,Maximum sustainable yield,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,benthic
+ple.27.24-32,2019,PA,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,benthic
+sol.27.20-24,2019,MSY,Maximum sustainable yield,GREEN,GREEN,GREEN,Baltic Sea Ecoregion, Greater North Sea Ecoregion,benthic
+sol.27.20-24,2019,MSY,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion, Greater North Sea Ecoregion,benthic
+spr.27.22-32,2018,FMSY Ranges,Maximum sustainable yield,RED,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+spr.27.22-32,2018,FMSY Ranges,Precautionary approach,GREEN,GREEN,GREEN,Baltic Sea Ecoregion,pelagic
+tur.27.22-32,2018,PA/Stock status only,Maximum sustainable yield,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic
+tur.27.22-32,2018,PA/Stock status only,Precautionary approach,GREY,GREY,GREY,Baltic Sea Ecoregion,benthic

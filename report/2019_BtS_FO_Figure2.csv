@@ -1,0 +1,690 @@
+type_var,YEAR,typeTotal
+Denmark,1950,53.429
+Denmark,1951,58.621
+Denmark,1952,59.818
+Denmark,1953,52.584
+Denmark,1954,49.592
+Denmark,1955,60.962
+Denmark,1956,51.411
+Denmark,1957,65.129
+Denmark,1958,68.432
+Denmark,1959,66.491
+Denmark,1960,63.073
+Denmark,1961,85.323
+Denmark,1962,85.083
+Denmark,1963,72.61
+Denmark,1964,89.569
+Denmark,1965,79.114
+Denmark,1966,83.359
+Denmark,1967,90.861
+Denmark,1968,90.061
+Denmark,1969,85.004
+Denmark,1970,85.547
+Denmark,1971,97.055
+Denmark,1972,101.337
+Denmark,1973,121.478
+Denmark,1974,112.566
+Denmark,1975,114.212
+Denmark,1976,144.583
+Denmark,1977,139.316
+Denmark,1978,109.736
+Denmark,1979,124.7
+Denmark,1980,130.398
+Denmark,1981,148.45
+Denmark,1982,168.894
+Denmark,1983,164.085
+Denmark,1984,175.516
+Denmark,1985,159.665
+Denmark,1986,149.001
+Denmark,1987,141.527
+Denmark,1988,139.493
+Denmark,1989,116.959
+Denmark,1990,98.38
+Denmark,1991,117.355
+Denmark,1992,120.544
+Denmark,1993,101.874
+Denmark,1994,164.88
+Denmark,1995,182.696
+Denmark,1996,241.919
+Denmark,1997,262.01
+Denmark,1998,217.332
+Denmark,1999,214.026
+Denmark,2000,169.535
+Denmark,2001,172.486
+Denmark,2002,127.246
+Denmark,2003,100.112
+Denmark,2004,110.784
+Denmark,2005,109.361
+Denmark,2006,44.04161
+Denmark,2007,47.50043
+Denmark,2008,55.40735
+Denmark,2009,75.13865
+Denmark,2010,58.99332
+Denmark,2011,47.4566
+Denmark,2012,40.63546
+Denmark,2013,42.34019
+Denmark,2014,47.79888
+Denmark,2015,40.60963
+Denmark,2016,37.54139
+Denmark,2017,48.646
+Denmark,2018,50.658626242
+Estonia,1950,0
+Estonia,1951,0
+Estonia,1952,0
+Estonia,1953,0
+Estonia,1954,0
+Estonia,1955,0
+Estonia,1956,0
+Estonia,1957,0
+Estonia,1958,0
+Estonia,1959,0
+Estonia,1960,0
+Estonia,1961,0
+Estonia,1962,0
+Estonia,1963,0
+Estonia,1964,0
+Estonia,1965,0
+Estonia,1966,0
+Estonia,1967,0
+Estonia,1968,0
+Estonia,1969,0
+Estonia,1970,0
+Estonia,1971,0
+Estonia,1972,0
+Estonia,1973,0
+Estonia,1974,0
+Estonia,1975,0
+Estonia,1976,0
+Estonia,1977,0
+Estonia,1978,0
+Estonia,1979,0
+Estonia,1980,0
+Estonia,1981,0
+Estonia,1982,0
+Estonia,1983,0
+Estonia,1984,0
+Estonia,1985,0
+Estonia,1986,0
+Estonia,1987,0
+Estonia,1988,0
+Estonia,1989,0
+Estonia,1990,0
+Estonia,1991,46.544
+Estonia,1992,36.937
+Estonia,1993,41.161
+Estonia,1994,46.076
+Estonia,1995,59.172
+Estonia,1996,71.374
+Estonia,1997,95.293
+Estonia,1998,77.626
+Estonia,1999,83.001
+Estonia,2000,85.176
+Estonia,2001,84.971
+Estonia,2002,79.035
+Estonia,2003,59.382
+Estonia,2004,68.1
+Estonia,2005,80.57
+Estonia,2006,73.43332
+Estonia,2007,81.85227
+Estonia,2008,83.64374
+Estonia,2009,83.64361
+Estonia,2010,79.57227
+Estonia,2011,64.04143
+Estonia,2012,52.64067
+Estonia,2013,54.80866
+Estonia,2014,55.25305
+Estonia,2015,59.66968
+Estonia,2016,60.78912
+Estonia,2017,64.51285
+Estonia,2018,51.816802
+Finland,1950,18.838
+Finland,1951,15.725
+Finland,1952,17.705
+Finland,1953,42.532
+Finland,1954,42.533
+Finland,1955,42.534
+Finland,1956,42.535
+Finland,1957,42.536
+Finland,1958,42.537
+Finland,1959,46.871
+Finland,1960,46.872
+Finland,1961,46.873
+Finland,1962,45.134
+Finland,1963,63.725
+Finland,1964,46.199
+Finland,1965,56.958
+Finland,1966,53.185
+Finland,1967,54.834
+Finland,1968,70.82
+Finland,1969,69.002
+Finland,1970,63.215
+Finland,1971,70.108
+Finland,1972,69.494
+Finland,1973,80.638
+Finland,1974,86.928
+Finland,1975,85.967
+Finland,1976,92.45
+Finland,1977,94.057
+Finland,1978,105.846
+Finland,1979,101.877
+Finland,1980,83.302
+Finland,1981,74.408
+Finland,1982,81.958
+Finland,1983,92.097
+Finland,1984,95.786
+Finland,1985,95.848
+Finland,1986,90.796
+Finland,1987,88.744
+Finland,1988,99.822
+Finland,1989,87.475
+Finland,1990,73.579
+Finland,1991,60.085
+Finland,1992,79.007
+Finland,1993,83.447
+Finland,1994,103.292
+Finland,1995,105.993
+Finland,1996,116.493
+Finland,1997,117.472
+Finland,1998,118.702
+Finland,1999,107.594
+Finland,2000,120.753
+Finland,2001,114.277
+Finland,2002,109.08
+Finland,2003,85.693
+Finland,2004,98.698
+Finland,2005,95.022
+Finland,2006,112.93288
+Finland,2007,128.16322
+Finland,2008,119.35546
+Finland,2009,125.31517
+Finland,2010,127.22
+Finland,2011,124.82745
+Finland,2012,138.06887
+Finland,2013,144.297
+Finland,2014,153.48777
+Finland,2015,153.3945
+Finland,2016,164.83344
+Finland,2017,162.01674
+Finland,2018,143.625513
+Germany,1950,39.304
+Germany,1951,35.554
+Germany,1952,23.359
+Germany,1953,36.834
+Germany,1954,35.697
+Germany,1955,29.21
+Germany,1956,29.228
+Germany,1957,44.681
+Germany,1958,43.198
+Germany,1959,28.942
+Germany,1960,37.568
+Germany,1961,66.634
+Germany,1962,81.399
+Germany,1963,68.989
+Germany,1964,74.877
+Germany,1965,71.964
+Germany,1966,90.829
+Germany,1967,125.07
+Germany,1968,115.964
+Germany,1969,89.988
+Germany,1970,108.691
+Germany,1971,107.687
+Germany,1972,25.994
+Germany,1973,137.212
+Germany,1974,132.643
+Germany,1975,139.069
+Germany,1976,114.495
+Germany,1977,140.281
+Germany,1978,106.403
+Germany,1979,99.199
+Germany,1980,102.145
+Germany,1981,101.703
+Germany,1982,100.042
+Germany,1983,106.964
+Germany,1984,120.227
+Germany,1985,102.33
+Germany,1986,94.691
+Germany,1987,87.71
+Germany,1988,89.599
+Germany,1989,87.775
+Germany,1990,60.325
+Germany,1991,31.499
+Germany,1992,30.931
+Germany,1993,38.208
+Germany,1994,30.447
+Germany,1995,29.095
+Germany,1996,33.843
+Germany,1997,33.042
+Germany,1998,29.861
+Germany,1999,31.541
+Germany,2000,27.798
+Germany,2001,29.689
+Germany,2002,37.045
+Germany,2003,53.53
+Germany,2004,61.955
+Germany,2005,68.749
+Germany,2006,60.53274
+Germany,2007,63.026
+Germany,2008,61.72
+Germany,2009,49.24256
+Germany,2010,37.028
+Germany,2011,28.49456
+Germany,2012,28.93521
+Germany,2013,29.47204
+Germany,2014,26.1033
+Germany,2015,30.58411
+Germany,2016,33.60427
+Germany,2017,21.24549
+Germany,2018,36.354636
+Latvia,1950,0
+Latvia,1951,0
+Latvia,1952,0
+Latvia,1953,0
+Latvia,1954,0
+Latvia,1955,0
+Latvia,1956,0
+Latvia,1957,0
+Latvia,1958,0
+Latvia,1959,0
+Latvia,1960,0
+Latvia,1961,0
+Latvia,1962,0
+Latvia,1963,0
+Latvia,1964,0
+Latvia,1965,0
+Latvia,1966,0
+Latvia,1967,0
+Latvia,1968,0
+Latvia,1969,0
+Latvia,1970,0
+Latvia,1971,0
+Latvia,1972,0
+Latvia,1973,0
+Latvia,1974,0
+Latvia,1975,0
+Latvia,1976,0
+Latvia,1977,0
+Latvia,1978,0
+Latvia,1979,0
+Latvia,1980,0
+Latvia,1981,0
+Latvia,1982,0
+Latvia,1983,0
+Latvia,1984,0
+Latvia,1985,0
+Latvia,1986,0
+Latvia,1987,0
+Latvia,1988,67.64
+Latvia,1989,59.31
+Latvia,1990,57.463
+Latvia,1991,55.461
+Latvia,1992,46.404
+Latvia,1993,37.347
+Latvia,1994,46.056
+Latvia,1995,57.112
+Latvia,1996,71.786
+Latvia,1997,86.123
+Latvia,1998,78.109
+Latvia,1999,78.147
+Latvia,2000,80.329
+Latvia,2001,76.93
+Latvia,2002,78.802
+Latvia,2003,71.609
+Latvia,2004,82.296
+Latvia,2005,93.088
+Latvia,2006,82.754
+Latvia,2007,89.365
+Latvia,2008,86.4775
+Latvia,2009,78.4639
+Latvia,2010,74.0457
+Latvia,2011,65.87605
+Latvia,2012,57.58761
+Latvia,2013,61.00104
+Latvia,2014,59.89405
+Latvia,2015,62.633
+Latvia,2016,60.43306
+Latvia,2017,67.38092
+Latvia,2018,47.3869279
+Lithuania,1950,0
+Lithuania,1951,0
+Lithuania,1952,0
+Lithuania,1953,0
+Lithuania,1954,0
+Lithuania,1955,0
+Lithuania,1956,0
+Lithuania,1957,0
+Lithuania,1958,0
+Lithuania,1959,0
+Lithuania,1960,0
+Lithuania,1961,0
+Lithuania,1962,0
+Lithuania,1963,0
+Lithuania,1964,0
+Lithuania,1965,0
+Lithuania,1966,0
+Lithuania,1967,0
+Lithuania,1968,0
+Lithuania,1969,0
+Lithuania,1970,0
+Lithuania,1971,0
+Lithuania,1972,0
+Lithuania,1973,0
+Lithuania,1974,0
+Lithuania,1975,0
+Lithuania,1976,0
+Lithuania,1977,0
+Lithuania,1978,0
+Lithuania,1979,0
+Lithuania,1980,0
+Lithuania,1981,0
+Lithuania,1982,0
+Lithuania,1983,0
+Lithuania,1984,0
+Lithuania,1985,0
+Lithuania,1986,0
+Lithuania,1987,0
+Lithuania,1988,21.267
+Lithuania,1989,17.042
+Lithuania,1990,16.862
+Lithuania,1991,12.914
+Lithuania,1992,11.217
+Lithuania,1993,7.273
+Lithuania,1994,9.975
+Lithuania,1995,15.751
+Lithuania,1996,20.47
+Lithuania,1997,14.824
+Lithuania,1998,11.105
+Lithuania,1999,9.698
+Lithuania,2000,8.456
+Lithuania,2001,10.024
+Lithuania,2002,9.906
+Lithuania,2003,9.415
+Lithuania,2004,12.625
+Lithuania,2005,13.547
+Lithuania,2006,15.821
+Lithuania,2007,26.743
+Lithuania,2008,23.4863
+Lithuania,2009,26.7917
+Lithuania,2010,15.5367
+Lithuania,2011,15.989
+Lithuania,2012,16.56732
+Lithuania,2013,11.14952
+Lithuania,2014,13.82569
+Lithuania,2015,17.90293
+Lithuania,2016,19.11154
+Lithuania,2017,18.8646
+Lithuania,2018,24.309982
+Poland,1950,0
+Poland,1951,0
+Poland,1952,0
+Poland,1953,0
+Poland,1954,0
+Poland,1955,64.97
+Poland,1956,73.344
+Poland,1957,72.184
+Poland,1958,67.331
+Poland,1959,69.309
+Poland,1960,82.806
+Poland,1961,72.358
+Poland,1962,77.043
+Poland,1963,92.583
+Poland,1964,81.513
+Poland,1965,84.602
+Poland,1966,104.652
+Poland,1967,106.912
+Poland,1968,127.86
+Poland,1969,126.314
+Poland,1970,146.647
+Poland,1971,144.222
+Poland,1972,158.239
+Poland,1973,160.521
+Poland,1974,181.736
+Poland,1975,213.665
+Poland,1976,200.298
+Poland,1977,170.046
+Poland,1978,174.52
+Poland,1979,187.645
+Poland,1980,221.785
+Poland,1981,208.893
+Poland,1982,200.369
+Poland,1983,174.538
+Poland,1984,190.702
+Poland,1985,178.757
+Poland,1986,157.424
+Poland,1987,137.791
+Poland,1988,126.496
+Poland,1989,118.722
+Poland,1990,110.62
+Poland,1991,102.493
+Poland,1992,103.626
+Poland,1993,102.001
+Poland,1994,116.5
+Poland,1995,129.569
+Poland,1996,155.817
+Poland,1997,176.979
+Poland,1998,117.144
+Poland,1999,128.096
+Poland,2000,141.154
+Poland,2001,156.551
+Poland,2002,146.897
+Poland,2003,142.684
+Poland,2004,152.074
+Poland,2005,124.105
+Poland,2006,104.62891
+Poland,2007,107.73835
+Poland,2008,93.5909
+Poland,2009,129.75218
+Poland,2010,110.52226
+Poland,2011,110.17684
+Poland,2012,120.56553
+Poland,2013,134.06333
+Poland,2014,117.5241
+Poland,2015,134.76054
+Poland,2016,138.91331
+Poland,2017,136.72272
+Poland,2018,151.87976748
+Russian Federation,1950,0
+Russian Federation,1951,0
+Russian Federation,1952,0
+Russian Federation,1953,0
+Russian Federation,1954,0
+Russian Federation,1955,156.247
+Russian Federation,1956,178.907
+Russian Federation,1957,173.499
+Russian Federation,1958,152.755
+Russian Federation,1959,166.92
+Russian Federation,1960,155.468
+Russian Federation,1961,124.652
+Russian Federation,1962,155.581
+Russian Federation,1963,169.15
+Russian Federation,1964,190.13
+Russian Federation,1965,184.124
+Russian Federation,1966,208.114
+Russian Federation,1967,220.167
+Russian Federation,1968,253.345
+Russian Federation,1969,279.26
+Russian Federation,1970,298.003
+Russian Federation,1971,314.067
+Russian Federation,1972,337.867
+Russian Federation,1973,328.837
+Russian Federation,1974,347.989
+Russian Federation,1975,332.337
+Russian Federation,1976,328.456
+Russian Federation,1977,317.388
+Russian Federation,1978,278.808
+Russian Federation,1979,288.574
+Russian Federation,1980,297.873
+Russian Federation,1981,245.282
+Russian Federation,1982,225.932
+Russian Federation,1983,239.321
+Russian Federation,1984,251.754
+Russian Federation,1985,240.33
+Russian Federation,1986,223.543
+Russian Federation,1987,219.054
+Russian Federation,1988,215.888
+Russian Federation,1989,214.602
+Russian Federation,1990,212.132
+Russian Federation,1991,90.037
+Russian Federation,1992,50.149
+Russian Federation,1993,39.79
+Russian Federation,1994,37.739
+Russian Federation,1995,37.39
+Russian Federation,1996,40.115
+Russian Federation,1997,41.684
+Russian Federation,1998,40.92
+Russian Federation,1999,52.785
+Russian Federation,2000,55.884
+Russian Federation,2001,58.951
+Russian Federation,2002,56.889
+Russian Federation,2003,51.322
+Russian Federation,2004,40.289
+Russian Federation,2005,45.779
+Russian Federation,2006,47.359
+Russian Federation,2007,42.243
+Russian Federation,2008,38.5
+Russian Federation,2009,47.075
+Russian Federation,2010,44.278
+Russian Federation,2011,38.805
+Russian Federation,2012,48.291
+Russian Federation,2013,41.858
+Russian Federation,2014,48.737
+Russian Federation,2015,61.91
+Russian Federation,2016,68.28
+Russian Federation,2017,71.249
+Russian Federation,2018,71.711
+Sweden,1950,55.488
+Sweden,1951,56.373
+Sweden,1952,59.581
+Sweden,1953,62.028
+Sweden,1954,59.631
+Sweden,1955,64.211
+Sweden,1956,57.397
+Sweden,1957,64.162
+Sweden,1958,64.939
+Sweden,1959,66.624
+Sweden,1960,68.303
+Sweden,1961,68.192
+Sweden,1962,70.69
+Sweden,1963,61.932
+Sweden,1964,58.757
+Sweden,1965,59.05
+Sweden,1966,60.413
+Sweden,1967,66.912
+Sweden,1968,84.645
+Sweden,1969,58.845
+Sweden,1970,57.156
+Sweden,1971,53.258
+Sweden,1972,63.846
+Sweden,1973,92.299
+Sweden,1974,89.841
+Sweden,1975,88.302
+Sweden,1976,70.39
+Sweden,1977,76.048
+Sweden,1978,76.043
+Sweden,1979,116.195
+Sweden,1980,133.744
+Sweden,1981,133.332
+Sweden,1982,142.969
+Sweden,1983,146.177
+Sweden,1984,142.655
+Sweden,1985,123.652
+Sweden,1986,95.547
+Sweden,1987,91.612
+Sweden,1988,111.967
+Sweden,1989,129.485
+Sweden,1990,122.066
+Sweden,1991,112.322
+Sweden,1992,150.327
+Sweden,1993,195.3
+Sweden,1994,236.405
+Sweden,1995,260.341
+Sweden,1996,273.559
+Sweden,1997,269.731
+Sweden,1998,309.38
+Sweden,1999,234.304
+Sweden,2000,229.169
+Sweden,2001,178.28
+Sweden,2002,143.204
+Sweden,2003,128.304
+Sweden,2004,146.877
+Sweden,2005,163.85
+Sweden,2006,164.37188
+Sweden,2007,163.1118
+Sweden,2008,165.1273
+Sweden,2009,147.2372
+Sweden,2010,138.9036
+Sweden,2011,112.9708
+Sweden,2012,96.0503
+Sweden,2013,101.6058
+Sweden,2014,103.1478
+Sweden,2015,119.28199
+Sweden,2016,131.24483
+Sweden,2017,119.63571
+Sweden,2018,138.849143
+other,1950,0
+other,1951,0.121
+other,1952,0.11
+other,1953,0
+other,1954,0
+other,1955,0
+other,1956,0
+other,1957,0
+other,1958,0.042
+other,1959,0
+other,1960,0
+other,1961,0
+other,1962,0
+other,1963,0
+other,1964,0
+other,1965,0
+other,1966,0
+other,1967,0
+other,1968,0
+other,1969,0
+other,1970,0
+other,1971,0.003
+other,1972,0
+other,1973,0
+other,1974,0
+other,1975,0
+other,1976,0
+other,1977,0
+other,1978,0
+other,1979,0
+other,1980,4.152
+other,1981,2.765
+other,1982,4.3
+other,1983,6.065
+other,1984,6.354
+other,1985,5.89
+other,1986,4.6
+other,1987,5.567
+other,1988,6.915
+other,1989,4.499
+other,1990,3.558
+other,1991,2.992
+other,1992,0.602
+other,1993,0.577
+other,1994,2.671
+other,1995,1.07
+other,1996,1.003
+other,1997,0.033
+other,1998,0.021
+other,1999,0
+other,2000,0
+other,2001,0.004
+other,2002,0
+other,2003,0
+other,2004,0
+other,2005,0
+other,2006,0
+other,2007,0
+other,2008,0
+other,2009,0
+other,2010,0
+other,2011,0
+other,2012,0.01916
+other,2013,0
+other,2014,0
+other,2015,0
+other,2016,0
+other,2017,0

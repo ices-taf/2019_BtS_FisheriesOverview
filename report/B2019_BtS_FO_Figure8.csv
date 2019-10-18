@@ -1,0 +1,94 @@
+type_var,YEAR,typeTotal
+Beam trawl,2003,0.442
+Beam trawl,2005,0.132
+Beam trawl,2006,1.09
+Beam trawl,2007,0.881
+Beam trawl,2008,31.433
+Beam trawl,2009,16.298
+Beam trawl,2010,1.013
+Beam trawl,2011,0.884
+Beam trawl,2012,0.368
+Dredge,2003,58.965
+Dredge,2004,78.384
+Dredge,2005,72.955
+Dredge,2006,97.7
+Dredge,2007,110.931
+Dredge,2008,45.088
+Dredge,2009,48.712
+Dredge,2010,65.364
+Dredge,2011,56.203
+Dredge,2012,80.017
+Dredge,2013,119.116
+Dredge,2014,117.0075
+Dredge,2015,128.484
+Dredge,2016,135.615
+Otter trawl/seine,2003,11679.852
+Otter trawl/seine,2004,17435.6904
+Otter trawl/seine,2005,15948.625
+Otter trawl/seine,2006,14923.8
+Otter trawl/seine,2007,11461.786
+Otter trawl/seine,2008,9559.085
+Otter trawl/seine,2009,7851.95474
+Otter trawl/seine,2010,7722.6101
+Otter trawl/seine,2011,8080.2332
+Otter trawl/seine,2012,8651.40941
+Otter trawl/seine,2013,7551.60956
+Otter trawl/seine,2014,6811.16034
+Otter trawl/seine,2015,6378.55281
+Otter trawl/seine,2016,5692.4005
+Pelagic trawl/seine,2003,9287.524
+Pelagic trawl/seine,2004,17950.2046
+Pelagic trawl/seine,2005,17099.133
+Pelagic trawl/seine,2006,15320.423
+Pelagic trawl/seine,2007,15535.427
+Pelagic trawl/seine,2008,13465.947
+Pelagic trawl/seine,2009,12165.053
+Pelagic trawl/seine,2010,10109.246
+Pelagic trawl/seine,2011,10130.1
+Pelagic trawl/seine,2012,7631.707
+Pelagic trawl/seine,2013,8628.76574
+Pelagic trawl/seine,2014,8437.82208
+Pelagic trawl/seine,2015,8328.26865
+Pelagic trawl/seine,2016,8570.33984
+Pots,2003,849.801
+Pots,2004,1477.43
+Pots,2005,1511.227
+Pots,2006,1316.707
+Pots,2007,1201.656
+Pots,2008,1009.52785
+Pots,2009,1024.33043
+Pots,2010,1031.25521
+Pots,2011,758.55229
+Pots,2012,686.74637
+Pots,2013,738.36142
+Pots,2014,820.09174
+Pots,2015,790.33162
+Pots,2016,832.12814
+Static/Gill net/LL,2003,8071.909
+Static/Gill net/LL,2004,13974.68522
+Static/Gill net/LL,2005,13438.57897
+Static/Gill net/LL,2006,12085.90933
+Static/Gill net/LL,2007,10362.88077
+Static/Gill net/LL,2008,9106.85042
+Static/Gill net/LL,2009,8034.66717
+Static/Gill net/LL,2010,7064.01374
+Static/Gill net/LL,2011,6517.86238
+Static/Gill net/LL,2012,6693.15519
+Static/Gill net/LL,2013,6174.28457
+Static/Gill net/LL,2014,5945.59384
+Static/Gill net/LL,2015,5654.14511
+Static/Gill net/LL,2016,5430.94962
+other,2003,420.711
+other,2004,349.873
+other,2005,376.43
+other,2006,418.768
+other,2007,326.633
+other,2008,306.681
+other,2009,298.212
+other,2010,278.815
+other,2011,285.087
+other,2012,311.289
+other,2013,280.119
+other,2014,292.71745
+other,2015,220.53535
+other,2016,242.61065

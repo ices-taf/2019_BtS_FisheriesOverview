@@ -1,0 +1,414 @@
+type_var,YEAR,typeTotal
+cod,1950,58.798
+cod,1951,59.64
+cod,1952,66.282
+cod,1953,54.642
+cod,1954,53.407
+cod,1955,134.989
+cod,1956,168.127
+cod,1957,195.645
+cod,1958,152.186
+cod,1959,142.956
+cod,1960,168.276
+cod,1961,151.471
+cod,1962,153.279
+cod,1963,154.601
+cod,1964,133.203
+cod,1965,133.656
+cod,1966,164.689
+cod,1967,175.542
+cod,1968,198.644
+cod,1969,196.875
+cod,1970,192.465
+cod,1971,159.767
+cod,1972,174.869
+cod,1973,189.297
+cod,1974,188.898
+cod,1975,234.168
+cod,1976,255.284
+cod,1977,213.042
+cod,1978,195.925
+cod,1979,272.519
+cod,1980,388.186
+cod,1981,380.177
+cod,1982,361.303
+cod,1983,375.774
+cod,1984,442.404
+cod,1985,344.199
+cod,1986,271.205
+cod,1987,237.717
+cod,1988,243.17
+cod,1989,202.605
+cod,1990,175.706
+cod,1991,140.738
+cod,1992,73.341
+cod,1993,40.377
+cod,1994,74.604
+cod,1995,117.265
+cod,1996,163.991
+cod,1997,134.477
+cod,1998,101.684
+cod,1999,116.791
+cod,2000,105.056
+cod,2001,102.637
+cod,2002,74.132
+cod,2003,74.146
+cod,2004,73.376
+cod,2005,63.011
+cod,2006,58.58653
+cod,2007,52.57721
+cod,2008,50.19915
+cod,2009,56.44859
+cod,2010,58.99036
+cod,2011,59.95179
+cod,2012,62.00044
+cod,2013,38.79682
+cod,2014,36.98721
+cod,2015,44.89258
+cod,2016,35.91531
+cod,2017,28.03964
+cod,2018,21.3248192
+flounder,1950,3.503
+flounder,1951,3.576
+flounder,1952,3.148
+flounder,1953,2.896
+flounder,1954,2.748
+flounder,1955,8.713
+flounder,1956,6.738
+flounder,1957,7.58
+flounder,1958,6.741
+flounder,1959,7.754
+flounder,1960,7.032
+flounder,1961,8.814
+flounder,1962,8.396
+flounder,1963,7.662
+flounder,1964,5.405
+flounder,1965,7.736
+flounder,1966,9.667
+flounder,1967,7.163
+flounder,1968,11.2
+flounder,1969,9.673
+flounder,1970,9.485
+flounder,1971,9.37
+flounder,1972,7.793
+flounder,1973,6.569
+flounder,1974,7.906
+flounder,1975,12.069
+flounder,1976,13.691
+flounder,1977,16.317
+flounder,1978,9.892
+flounder,1979,9.23
+flounder,1980,8.329
+flounder,1981,8.625
+flounder,1982,9.104
+flounder,1983,9.55
+flounder,1984,7.637
+flounder,1985,8.252
+flounder,1986,7.901
+flounder,1987,7.037
+flounder,1988,7.9
+flounder,1989,8.733
+flounder,1990,7.138
+flounder,1991,6.321
+flounder,1992,4.541
+flounder,1993,3.732
+flounder,1994,8.377
+flounder,1995,8.228
+flounder,1996,8.13
+flounder,1997,9.994
+flounder,1998,9.235
+flounder,1999,7.963
+flounder,2000,10.235
+flounder,2001,11.026
+flounder,2002,10.153
+flounder,2003,7.712
+flounder,2004,17.381
+flounder,2005,19.283
+flounder,2006,15.81517
+flounder,2007,17.10987
+flounder,2008,14.52626
+flounder,2009,13.96765
+flounder,2010,15.16534
+flounder,2011,14.30475
+flounder,2012,14.44285
+flounder,2013,19.74507
+flounder,2014,19.48379
+flounder,2015,15.87466
+flounder,2016,19.81911
+flounder,2017,15.50013
+flounder,2018,20.61405769
+herring,1950,70.454
+herring,1951,70.469
+herring,1952,59.065
+herring,1953,98.754
+herring,1954,95.669
+herring,1955,193.703
+herring,1956,185.885
+herring,1957,170.441
+herring,1958,183.899
+herring,1959,177.97
+herring,1960,168.095
+herring,1961,183.342
+herring,1962,188.48
+herring,1963,228.776
+herring,1964,223.646
+herring,1965,226.249
+herring,1966,251.458
+herring,1967,310.091
+herring,1968,352.474
+herring,1969,295.329
+herring,1970,312.119
+herring,1971,336.251
+herring,1972,288.536
+herring,1973,404.172
+herring,1974,407.081
+herring,1975,414.633
+herring,1976,393.507
+herring,1977,412.711
+herring,1978,419.602
+herring,1979,458.819
+herring,1980,452.873
+herring,1981,418.867
+herring,1982,441.765
+herring,1983,458.86
+herring,1984,426.478
+herring,1985,431.437
+herring,1986,400.524
+herring,1987,372.947
+herring,1988,455.9
+herring,1989,459.119
+herring,1990,402.791
+herring,1991,307.35
+herring,1992,343.083
+herring,1993,352.022
+herring,1994,353.411
+herring,1995,346.45
+herring,1996,325.631
+herring,1997,370.266
+herring,1998,383.488
+herring,1999,343.142
+herring,2000,371.017
+herring,2001,339.241
+herring,2002,281.545
+herring,2003,231.984
+herring,2004,232.922
+herring,2005,221.678
+herring,2006,235.36836
+herring,2007,252.33615
+herring,2008,251.35464
+herring,2009,256.06483
+herring,2010,240.04925
+herring,2011,243.88943
+herring,2012,252.03187
+herring,2013,263.8358
+herring,2014,288.42407
+herring,2015,340.97553
+herring,2016,378.5535
+herring,2017,356.26591
+herring,2018,360.676289
+sprat,1950,3.247
+sprat,1951,3.401
+sprat,1952,3.317
+sprat,1953,3.223
+sprat,1954,3.974
+sprat,1955,13.345
+sprat,1956,8.636
+sprat,1957,20.648
+sprat,1958,33.258
+sprat,1959,42.431
+sprat,1960,34.287
+sprat,1961,49.545
+sprat,1962,80.635
+sprat,1963,69.035
+sprat,1964,95.512
+sprat,1965,84.865
+sprat,1966,91.637
+sprat,1967,72.473
+sprat,1968,84.914
+sprat,1969,118.641
+sprat,1970,153.027
+sprat,1971,184.862
+sprat,1972,193.329
+sprat,1973,212.788
+sprat,1974,241.652
+sprat,1975,201.463
+sprat,1976,194.777
+sprat,1977,210.735
+sprat,1978,132.36
+sprat,1979,78.365
+sprat,1980,57.488
+sprat,1981,47.489
+sprat,1982,44.742
+sprat,1983,30.896
+sprat,1984,51.88
+sprat,1985,68.639
+sprat,1986,75.328
+sprat,1987,91.249
+sprat,1988,103.508
+sprat,1989,106.521
+sprat,1990,113.551
+sprat,1991,117.584
+sprat,1992,147.314
+sprat,1993,193.865
+sprat,1994,300.535
+sprat,1995,334.537
+sprat,1996,463.776
+sprat,1997,519.769
+sprat,1998,445.45
+sprat,1999,408.444
+sprat,2000,368.722
+sprat,2001,353.779
+sprat,2002,345.198
+sprat,2003,324.601
+sprat,2004,387.975
+sprat,2005,434.007
+sprat,2006,365.27879
+sprat,2007,396.01853
+sprat,2008,385.25037
+sprat,2009,408.26469
+sprat,2010,347.48354
+sprat,2011,262.64166
+sprat,2012,239.97408
+sprat,2013,264.29195
+sprat,2014,245.85494
+sprat,2015,243.30694
+sprat,2016,243.07157
+sprat,2017,279.88175
+sprat,2018,302.8092271
+undefined finfish,1950,6.125
+undefined finfish,1951,7.73
+undefined finfish,1952,5.904
+undefined finfish,1953,7.598
+undefined finfish,1954,4.732
+undefined finfish,1955,31.358
+undefined finfish,1956,27.131
+undefined finfish,1957,33.084
+undefined finfish,1958,29.589
+undefined finfish,1959,38.166
+undefined finfish,1960,27.681
+undefined finfish,1961,12.774
+undefined finfish,1962,15.183
+undefined finfish,1963,14.309
+undefined finfish,1964,18.978
+undefined finfish,1965,21.534
+undefined finfish,1966,22.582
+undefined finfish,1967,31.686
+undefined finfish,1968,29.616
+undefined finfish,1969,29.618
+undefined finfish,1970,25.443
+undefined finfish,1971,25.039
+undefined finfish,1972,24.283
+undefined finfish,1973,26.767
+undefined finfish,1974,21.19
+undefined finfish,1975,28.409
+undefined finfish,1976,25.705
+undefined finfish,1977,21.546
+undefined finfish,1978,14.658
+undefined finfish,1979,15.935
+undefined finfish,1980,8.469
+undefined finfish,1981,9.654
+undefined finfish,1982,9.194
+undefined finfish,1983,10.094
+undefined finfish,1984,5.116
+undefined finfish,1985,4.688
+undefined finfish,1986,6.348
+undefined finfish,1987,4.868
+undefined finfish,1988,7.557
+undefined finfish,1989,2.832
+undefined finfish,1990,3.67
+undefined finfish,1991,14.291
+undefined finfish,1992,7.784
+undefined finfish,1993,1.859
+undefined finfish,1994,0.644
+undefined finfish,1995,11.61
+undefined finfish,1996,1.951
+undefined finfish,1997,3.192
+undefined finfish,1998,0.416
+undefined finfish,1999,0.517
+undefined finfish,2000,0.349
+undefined finfish,2001,0.449
+undefined finfish,2002,0.412
+undefined finfish,2003,0.364
+undefined finfish,2004,0.188
+undefined finfish,2005,0.396
+undefined finfish,2006,0.02392
+undefined finfish,2007,0.0068
+undefined finfish,2008,0.13131
+undefined finfish,2009,0.1355
+undefined finfish,2010,0.19091
+undefined finfish,2011,0.06592
+undefined finfish,2012,0.06837
+undefined finfish,2013,0.0559
+undefined finfish,2014,0.003
+undefined finfish,2015,0
+undefined finfish,2016,0.003
+undefined finfish,2017,0.003
+other,1950,24.935
+other,1951,21.582
+other,1952,22.865
+other,1953,26.876
+other,1954,26.926
+other,1955,36.031
+other,1956,36.315
+other,1957,34.8
+other,1958,33.566
+other,1959,35.881
+other,1960,48.723
+other,1961,58.09
+other,1962,68.963
+other,1963,54.613
+other,1964,64.308
+other,1965,61.784
+other,1966,60.524
+other,1967,67.808
+other,1968,65.853
+other,1969,58.289
+other,1970,66.729
+other,1971,71.115
+other,1972,67.969
+other,1973,81.394
+other,1974,84.978
+other,1975,82.823
+other,1976,67.712
+other,1977,62.806
+other,1978,78.958
+other,1979,83.348
+other,1980,58.063
+other,1981,50.024
+other,1982,58.361
+other,1983,44.075
+other,1984,49.485
+other,1985,49.265
+other,1986,54.298
+other,1987,58.189
+other,1988,61.053
+other,1989,56.06
+other,1990,52.13
+other,1991,45.437
+other,1992,53.699
+other,1993,55.13
+other,1994,54.949
+other,1995,60.229
+other,1996,62.933
+other,1997,59.512
+other,1998,59.935
+other,1999,62.342
+other,2000,62.868
+other,2001,75.042
+other,2002,76.672
+other,2003,63.257
+other,2004,61.867
+other,2005,55.745
+other,2006,30.80266
+other,2007,31.69455
+other,2008,25.84686
+other,2009,27.77875
+other,2010,24.22049
+other,2011,27.7846
+other,2012,30.84353
+other,2013,33.87004
+other,2014,35.01863
+other,2015,35.69671
+other,2016,37.38924
+other,2017,30.58362
+other,2018,11.170947692
