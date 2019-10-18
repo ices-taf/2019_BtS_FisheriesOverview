@@ -171,12 +171,12 @@ write.taf(dat, file ="2019_BtS_FO_Figure12a.csv", dir = "report" )
 
 # 1. Demersal
 #~~~~~~~~~~~
-bar <- plot_CLD_bar(catch_current, guild = "demersal", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+bar <- plot_CLD_bar(catch_current, guild = "demersal", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 
-bar_dat <- plot_CLD_bar(catch_current, guild = "demersal", caption = T, cap_year = 2019, cap_month = "August", return_data = TRUE)
+bar_dat <- plot_CLD_bar(catch_current, guild = "demersal", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = TRUE)
 write.taf(bar_dat, file ="2019_BtS_FO_Figure13_demersal.csv", dir = "report" )
 
-kobe <- plot_kobe(catch_current, guild = "demersal", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+kobe <- plot_kobe(catch_current, guild = "demersal", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 #kobe_dat is just like bar_dat with one less variable
 #kobe_dat <- plot_kobe(catch_current, guild = "Demersal", caption = T, cap_year = 2018, cap_month = "November", return_data = TRUE)
 
@@ -192,12 +192,12 @@ dev.off()
 
 # 2. Pelagic
 #~~~~~~~~~~~
-bar <- plot_CLD_bar(catch_current, guild = "pelagic", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+bar <- plot_CLD_bar(catch_current, guild = "pelagic", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 
-bar_dat <- plot_CLD_bar(catch_current, guild = "pelagic", caption = T, cap_year = 2019, cap_month = "August", return_data = TRUE)
+bar_dat <- plot_CLD_bar(catch_current, guild = "pelagic", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = TRUE)
 write.taf(bar_dat, file ="2019_BtS_FO_Figure13_pelagic.csv", dir = "report")
 
-kobe <- plot_kobe(catch_current, guild = "pelagic", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+kobe <- plot_kobe(catch_current, guild = "pelagic", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 png("report/2019_BtS_FO_Figure13_pelagic.png",
     width = 131.32,
     height = 88.9,
@@ -211,12 +211,12 @@ dev.off()
 
 # 3. Benthic
 #~~~~~~~~~~~
-bar <- plot_CLD_bar(catch_current, guild = "benthic", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+bar <- plot_CLD_bar(catch_current, guild = "benthic", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 
-bar_dat <- plot_CLD_bar(catch_current, guild = "benthic", caption = T, cap_year = 2019, cap_month = "August", return_data = TRUE)
+bar_dat <- plot_CLD_bar(catch_current, guild = "benthic", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = TRUE)
 write.taf(bar_dat, file ="2019_BtS_FO_Figure13_benthic.csv", dir = "report" )
 
-kobe <- plot_kobe(catch_current, guild = "benthic", caption = T, cap_year = 2018, cap_month = "August", return_data = FALSE)
+kobe <- plot_kobe(catch_current, guild = "benthic", caption = TRUE, cap_year = 2018, cap_month = "August", return_data = FALSE)
 png("report/2019_BtS_FO_Figure13_benthic.png",
     width = 131.32,
     height = 88.9,
@@ -230,12 +230,12 @@ dev.off()
 
 # 4. All
 #~~~~~~~~~~~
-bar <- plot_CLD_bar(catch_current, guild = "All", caption = T, cap_year = 2019, cap_month = "August", return_data = FALSE)
+bar <- plot_CLD_bar(catch_current, guild = "All", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = FALSE)
 
-bar_dat <- plot_CLD_bar(catch_current, guild = "All", caption = T, cap_year = 2019, cap_month = "August", return_data = TRUE)
+bar_dat <- plot_CLD_bar(catch_current, guild = "All", caption = TRUE, cap_year = 2019, cap_month = "August", return_data = TRUE)
 write.taf(bar_dat, file ="2019_BtS_FO_Figure13_All.csv", dir = "report" )
 
-kobe <- plot_kobe(catch_current, guild = "All", caption = T, cap_year = 2018, cap_month = "August", return_data = FALSE)
+kobe <- plot_kobe(catch_current, guild = "All", caption = TRUE, cap_year = 2018, cap_month = "August", return_data = FALSE)
 png("report/2019_BtS_FO_Figure13_All.png",
     width = 131.32,
     height = 88.9,
@@ -258,7 +258,7 @@ write.taf(dat, file ="2019_BtS_FO_Figure7_trends.csv", dir = "report" )
 #Need to change order?
 discardsB <- plot_discard_current(catch_trends, 2019, cap_year = 2019, cap_month = "August")
 
-dat <- discardsB <- plot_discard_current(catch_trends, 2019, cap_year = 2018, cap_month = "August", return_data = TRUE)
+dat <- plot_discard_current(catch_trends, 2019, cap_year = 2018, cap_month = "August", return_data = TRUE)
 write.taf(dat, file ="2019_BtS_FO_Figure7_current.csv", dir = "report" )
 
 png("report/2019_BtS_FO_Figure7.png",
@@ -266,9 +266,9 @@ png("report/2019_BtS_FO_Figure7.png",
     height = 88.9,
     units = "mm",
     res = 300)
-p1_plot<-gridExtra::grid.arrange(discardsA,
-                                 discardsB, ncol = 2,
-                                 respect = TRUE)
+p1_plot <- gridExtra::grid.arrange(discardsA,
+                                   discardsB, ncol = 2,
+                                   respect = TRUE)
 dev.off()
 
 #~~~~~~~~~~~~~~~#
