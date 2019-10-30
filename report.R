@@ -159,6 +159,19 @@ dat <- plot_stock_trends(trends, guild="benthic", cap_year = 2018, cap_month = "
 write.taf(dat, file ="2019_BtS_FO_Figure12a.csv", dir = "report" )
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Ecosystem Overviews plot
+#~~~~~~~~~~~~~~~~~~~~~~~~~#
+guild <- read.taf("model/guild.csv")
+
+plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = FALSE )
+ggplot2::ggsave("2019_BtS_EO_GuildTrends.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
+
+dat <- plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = TRUE)
+write.taf(dat, file ="2019_BtS_EO_GuildTrends.csv", dir = "report" )
+
+
+
 #~~~~~~~~~~~~~~~#
 # B.Current catches
 #~~~~~~~~~~~~~~~#
