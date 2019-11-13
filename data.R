@@ -48,4 +48,4 @@ clean_sag <- dplyr::filter(clean_sag, !StockKeyLabel %in% Baltic_Out_stocks)
 clean_status <- dplyr::filter(clean_status, !StockKeyLabel %in% Baltic_Out_stocks)
 
 write.taf(clean_sag, dir = "data")
-write.taf(clean_status, dir = "data")
+write.taf(clean_status, dir = "data", quote = TRUE)
