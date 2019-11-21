@@ -1,4 +1,4 @@
-# All plots and data outputs are produced here 
+# All plots and data outputs are produced here
 
 library(icesTAF)
 taf.library(icesFO)
@@ -13,6 +13,9 @@ mkdir("report")
 
 catch_dat <- read.taf("data/catch_dat.csv")
 
+# stock information
+sid <- read.taf("bootstrap/data/ICES_StockInformation/sid.csv")
+
 frmt_effort <- read.taf("data/frmt_effort.csv")
 frmt_landings <- read.taf("data/frmt_landings.csv")
 trends <- read.taf("model/trends.csv")
@@ -21,13 +24,13 @@ catch_trends <- read.taf("model/catch_trends.csv")
 
 clean_status <- read.taf("data/clean_status.csv")
 
-ices_areas <- 
-  sf::st_read("bootstrap/data/ICES_areas/areas.csv", 
+ices_areas <-
+  sf::st_read("bootstrap/data/ICES_areas/areas.csv",
               options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
 ices_areas <- dplyr::select(ices_areas, -WKT)
 
-ecoregion <- 
-  sf::st_read("bootstrap/data/ICES_ecoregions/ecoregion.csv", 
+ecoregion <-
+  sf::st_read("bootstrap/data/ICES_ecoregions/ecoregion.csv",
               options = "GEOM_POSSIBLE_NAMES=WKT", crs = 4326)
 ecoregion <- dplyr::select(ecoregion, -WKT)
 
@@ -81,7 +84,7 @@ write.taf(dat, file= "2019_BtS_FO_Figure2.csv", dir = "report")
 #~~~~~~~~~~~~~~~#
 # By guild
 #~~~~~~~~~~~~~~~#
-# I remove Crustacean and Elasmobranch because they were not there last year and 
+# I remove Crustacean and Elasmobranch because they were not there last year and
 # create a new line "other" which is almost zero
 
 catch_dat2 <- dplyr::filter(catch_dat, GUILD != "Crustacean")
@@ -90,7 +93,7 @@ catch_dat2 <- dplyr::filter(catch_dat2, GUILD != "Elasmobranch")
         #Plot
 plot_catch_trends(catch_dat2, type = "GUILD", line_count = 4, plot_type = "line")
 ggplot2::ggsave("2019_BtS_FO_Figure4.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
-        
+
         #data
 dat <- plot_catch_trends(catch_dat, type = "GUILD", line_count = 4, plot_type = "line", return_data = TRUE)
 write.taf(dat, file= "2019_BtS_FO_Figure4.csv", dir = "report")
@@ -164,6 +167,29 @@ ggplot2::ggsave("2019_BtS_FO_Figure12a.png", path = "report/", width = 178, heig
 dat <- plot_stock_trends(trends, guild="benthic", cap_year = 2018, cap_month = "November", return_data = TRUE)
 write.taf(dat, file ="2019_BtS_FO_Figure12a.csv", dir = "report" )
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Ecosystem Overviews plot
+#~~~~~~~~~~~~~~~~~~~~~~~~~#
+guild <- read.taf("model/guild.csv")
+
+plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = FALSE )
+ggplot2::ggsave("2019_BtS_EO_GuildTrends.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
+guild2 <- guild %>% filter(FisheriesGuild != "MEAN")
+plot_guild_trends(guild2, cap_year = 2019, cap_month = "November",return_data = FALSE )
+ggplot2::ggsave("2019_BtS_EO_GuildTrends_noMEAN.png", path = "report/", width = 178, height = 130, units = "mm", dpi = 300)
+
+
+
+dat <- plot_guild_trends(guild, cap_year = 2019, cap_month = "October",return_data = TRUE)
+write.taf(dat, file ="2019_BtS_EO_GuildTrends.csv", dir = "report", quote = TRUE)
+
+dat <- trends[,1:2]
+dat <- unique(dat)
+dat <- dat %>% filter(StockKeyLabel != "MEAN")
+dat2 <- sid %>% select(c(StockKeyLabel, StockKeyDescription))
+dat <- left_join(dat,dat2)
+write.taf(dat, file ="2019_BtS_EO_SpeciesGuild_list.csv", dir = "report", quote = TRUE)
 
 #~~~~~~~~~~~~~~~#
 # B.Current catches
@@ -293,19 +319,17 @@ dat <- plot_GES_pies(clean_status, catch_current, "November", "2018", return_dat
 write.taf(dat, file = "2019_BtS_FO_Figure11.csv", dir = "report")
 
 #~~~~~~~~~~~~~~~#
-#F. ANNEX TABLE 
+#F. ANNEX TABLE
 #~~~~~~~~~~~~~~~#
 
-#can´t find the path
-grey.path <- system.file("symbols", "grey_q.png", package = "icesFO")
-red.path <- system.file("symbols", "red_cross.png", package = "icesFO")
-green.path <- system.file("symbols", "green_check.png", package = "icesFO")
-doc <- format_annex_table(clean_status, 2019, return_data = FALSE)
 
-print(doc, target = "report/2019_BtS_FO_annex_table.docx")
+#dat <- format_annex_table(clean_status, 2019)
 
-dat <- format_annex_table(clean_status, 2019, return_data = TRUE)
-# save?
+#write.taf(dat, file = "2019_BtS_FO_annex_table.csv", dir = "report")
+
+# This annex table has to be edited by hand,
+# For SBL and GES only one values is reported,
+# the one in PA for SBL and the one in MSY for GES
 
 
 ###########
@@ -322,15 +346,17 @@ effort <-
     effort %>%
       dplyr::filter(fishing_category_FO %in% gears) %>%
       dplyr::mutate(
-        fishing_category_FO = 
+        fishing_category_FO =
           dplyr::recode(fishing_category_FO,
             Static = "Static gears",
             Midwater = "Pelagic trawls and seines",
             Otter = "Bottom otter trawls",
-            `Demersal seine` = "Bottom seines")
-        )
+            `Demersal seine` = "Bottom seines"),
+          mw_fishinghours = as.numeric(mw_fishinghours)
+        ) %>%
+      filter(!is.na(mw_fishinghours))
 
-plot_effort_map(effort, ecoregion) + 
+plot_effort_map(effort, ecoregion) +
   ggtitle("Average MW Fishing hours 2015-2018")
 
 ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
@@ -339,12 +365,12 @@ ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height 
 # A. Swept area map
 #~~~~~~~~~~~~~~~#
 
-plot_sar_map(sar, ecoregion, what = "surface") + 
+plot_sar_map(sar, ecoregion, what = "surface") +
   ggtitle("Average surface swept area ratio 2015-2018")
 
 ggplot2::ggsave("2019_BtS_FO_Figure17a.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
 
-plot_sar_map(sar, ecoregion, what = "subsurface")+ 
+plot_sar_map(sar, ecoregion, what = "subsurface")+
   ggtitle("Average subsurface swept area ratio 2015-2018")
 
 ggplot2::ggsave("2019_BtS_FO_Figure17b.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
