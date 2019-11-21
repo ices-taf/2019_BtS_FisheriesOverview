@@ -14,7 +14,7 @@ MSY,GREEN,1,5,3.4
 pelagic,MSY,StockSize,StockSize
 MSY,GREEN,3,5,10.2
 pelagic,PA,FishingPressure,FishingPressure
-PA,GREEN,4,5,13.6
+PA,GREEN,3,5,10.2
 pelagic,PA,StockSize,StockSize
 PA,GREEN,3,5,10.2
 total,MSY,FishingPressure,FishingPressure
@@ -22,7 +22,7 @@ MSY,GREEN,7,17,7
 total,MSY,StockSize,StockSize
 MSY,GREEN,6,17,6
 total,PA,FishingPressure,FishingPressure
-PA,GREEN,12,17,12
+PA,GREEN,11,17,11
 total,PA,StockSize,StockSize
 PA,GREEN,6,17,6
 benthic,,SBL,SBL
@@ -69,6 +69,10 @@ total,,SBL,SBL
 ,GREY,8,17,8
 demersal,PA,StockSize,StockSize
 PA,ORANGE,1,2,8.5
+pelagic,PA,FishingPressure,FishingPressure
+PA,ORANGE,1,5,3.4
+total,PA,FishingPressure,FishingPressure
+PA,ORANGE,1,17,1
 total,PA,StockSize,StockSize
 PA,ORANGE,1,17,1
 benthic,MSY,FishingPressure,FishingPressure
