@@ -364,6 +364,16 @@ effort <-
         ) %>%
       filter(!is.na(mw_fishinghours))
 
+# write layer
+write_layer <- function(dat, fname) {
+  sf::write_sf(dat, paste0("report/", fname, ".shp"))
+  files <- dir("report", pattern = fname, full = TRUE)
+  zip(paste0("report/", fname, ".zip"), files, extras = "-j")
+  file.remove(files)
+}
+write_layer(effort, "2019_BtS_FO_Figure9")
+
+# save plot
 plot_effort_map(effort, ecoregion) +
   ggtitle("Average MW Fishing hours 2015-2018")
 
@@ -372,6 +382,9 @@ ggplot2::ggsave("2019_BtS_FO_Figure9.png", path = "report", width = 170, height 
 #~~~~~~~~~~~~~~~#
 # A. Swept area map
 #~~~~~~~~~~~~~~~#
+
+# write layer
+write_layer(sar, "2019_BtS_FO_Figure17")
 
 plot_sar_map(sar, ecoregion, what = "surface") +
   ggtitle("Average surface swept area ratio 2015-2018")
@@ -382,3 +395,4 @@ plot_sar_map(sar, ecoregion, what = "subsurface")+
   ggtitle("Average subsurface swept area ratio 2015-2018")
 
 ggplot2::ggsave("2019_BtS_FO_Figure17b.png", path = "report", width = 170, height = 200, units = "mm", dpi = 300)
+

@@ -1,6 +1,7 @@
 
 # Initial formatting of the data
 
+library(icesTAF)
 taf.library(icesFO)
 library(dplyr)
 
@@ -16,8 +17,8 @@ hist <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_historical_catches.cs
 official <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_2006_2017_catches.csv")
 prelim <- read.taf("bootstrap/data/ICES_nominal_catches/ICES_preliminary_catches.csv")
 
-catch_dat <- 
-  format_catches(2019, "Baltic Sea", 
+catch_dat <-
+  format_catches(2019, "Baltic Sea",
     hist, official, prelim, species_list, sid)
 
 write.taf(catch_dat, dir = "data", quote = TRUE)
