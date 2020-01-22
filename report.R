@@ -331,9 +331,9 @@ write.taf(dat, file = "2019_BtS_FO_Figure11.csv", dir = "report")
 #~~~~~~~~~~~~~~~#
 
 
-#dat <- format_annex_table(clean_status, 2019)
+dat <- format_annex_table(clean_status, 2019)
 
-#write.taf(dat, file = "2019_BtS_FO_annex_table.csv", dir = "report")
+write.taf(dat, file = "2019_BtS_FO_annex_table.csv", dir = "report")
 
 # This annex table has to be edited by hand,
 # For SBL and GES only one values is reported,
